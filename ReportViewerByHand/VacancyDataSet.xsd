@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VacancyDataSet" targetNamespace="http://tempuri.org/VacancyDataSet.xsd" xmlns:mstns="http://tempuri.org/VacancyDataSet.xsd" xmlns="http://tempuri.org/VacancyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ICAccess3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ICAccess3ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ICAccess3ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_VacancyByDivisionOrderedTableAdapter" GeneratorDataComponentClassName="View_VacancyByDivisionOrderedTableAdapter" Name="View_VacancyByDivisionOrdered" UserDataComponentName="View_VacancyByDivisionOrderedTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ICAccess3ConnectionString (Web.config)" DbObjectName="ICAccess3.dbo.View_VacancyByDivisionOrdered" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BudCode, BudDesc1, DivCode, DivDesc1, DivChief, SecCode, SecDesc1, BudItemDesc, BudSchedule, BudPosNum, BudFilled, BudFunction, BudDivCode, BudSecCode, BudItemNum FROM dbo.View_VacancyByDivisionOrdered</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BudCode" DataSetColumn="BudCode" />
+              <Mapping SourceColumn="BudDesc1" DataSetColumn="BudDesc1" />
+              <Mapping SourceColumn="DivCode" DataSetColumn="DivCode" />
+              <Mapping SourceColumn="DivDesc1" DataSetColumn="DivDesc1" />
+              <Mapping SourceColumn="DivChief" DataSetColumn="DivChief" />
+              <Mapping SourceColumn="SecCode" DataSetColumn="SecCode" />
+              <Mapping SourceColumn="SecDesc1" DataSetColumn="SecDesc1" />
+              <Mapping SourceColumn="BudItemDesc" DataSetColumn="BudItemDesc" />
+              <Mapping SourceColumn="BudSchedule" DataSetColumn="BudSchedule" />
+              <Mapping SourceColumn="BudPosNum" DataSetColumn="BudPosNum" />
+              <Mapping SourceColumn="BudFilled" DataSetColumn="BudFilled" />
+              <Mapping SourceColumn="BudFunction" DataSetColumn="BudFunction" />
+              <Mapping SourceColumn="BudDivCode" DataSetColumn="BudDivCode" />
+              <Mapping SourceColumn="BudSecCode" DataSetColumn="BudSecCode" />
+              <Mapping SourceColumn="BudItemNum" DataSetColumn="BudItemNum" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VacancyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VacancyDataSet" msprop:Generator_UserDSName="VacancyDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_VacancyByDivisionOrdered" msprop:Generator_TableClassName="View_VacancyByDivisionOrderedDataTable" msprop:Generator_TableVarName="tableView_VacancyByDivisionOrdered" msprop:Generator_TablePropName="View_VacancyByDivisionOrdered" msprop:Generator_RowDeletingName="View_VacancyByDivisionOrderedRowDeleting" msprop:Generator_RowChangingName="View_VacancyByDivisionOrderedRowChanging" msprop:Generator_RowEvHandlerName="View_VacancyByDivisionOrderedRowChangeEventHandler" msprop:Generator_RowDeletedName="View_VacancyByDivisionOrderedRowDeleted" msprop:Generator_UserTableName="View_VacancyByDivisionOrdered" msprop:Generator_RowChangedName="View_VacancyByDivisionOrderedRowChanged" msprop:Generator_RowEvArgName="View_VacancyByDivisionOrderedRowChangeEvent" msprop:Generator_RowClassName="View_VacancyByDivisionOrderedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BudCode" msprop:Generator_ColumnVarNameInTable="columnBudCode" msprop:Generator_ColumnPropNameInRow="BudCode" msprop:Generator_ColumnPropNameInTable="BudCodeColumn" msprop:Generator_UserColumnName="BudCode" type="xs:int" />
+              <xs:element name="BudDesc1" msprop:Generator_ColumnVarNameInTable="columnBudDesc1" msprop:Generator_ColumnPropNameInRow="BudDesc1" msprop:Generator_ColumnPropNameInTable="BudDesc1Column" msprop:Generator_UserColumnName="BudDesc1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DivCode" msprop:Generator_ColumnVarNameInTable="columnDivCode" msprop:Generator_ColumnPropNameInRow="DivCode" msprop:Generator_ColumnPropNameInTable="DivCodeColumn" msprop:Generator_UserColumnName="DivCode" type="xs:int" />
+              <xs:element name="DivDesc1" msprop:Generator_ColumnVarNameInTable="columnDivDesc1" msprop:Generator_ColumnPropNameInRow="DivDesc1" msprop:Generator_ColumnPropNameInTable="DivDesc1Column" msprop:Generator_UserColumnName="DivDesc1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DivChief" msprop:Generator_ColumnVarNameInTable="columnDivChief" msprop:Generator_ColumnPropNameInRow="DivChief" msprop:Generator_ColumnPropNameInTable="DivChiefColumn" msprop:Generator_UserColumnName="DivChief" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecCode" msprop:Generator_ColumnVarNameInTable="columnSecCode" msprop:Generator_ColumnPropNameInRow="SecCode" msprop:Generator_ColumnPropNameInTable="SecCodeColumn" msprop:Generator_UserColumnName="SecCode" type="xs:int" />
+              <xs:element name="SecDesc1" msprop:Generator_ColumnVarNameInTable="columnSecDesc1" msprop:Generator_ColumnPropNameInRow="SecDesc1" msprop:Generator_ColumnPropNameInTable="SecDesc1Column" msprop:Generator_UserColumnName="SecDesc1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BudItemDesc" msprop:Generator_ColumnVarNameInTable="columnBudItemDesc" msprop:Generator_ColumnPropNameInRow="BudItemDesc" msprop:Generator_ColumnPropNameInTable="BudItemDescColumn" msprop:Generator_UserColumnName="BudItemDesc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BudSchedule" msprop:Generator_ColumnVarNameInTable="columnBudSchedule" msprop:Generator_ColumnPropNameInRow="BudSchedule" msprop:Generator_ColumnPropNameInTable="BudScheduleColumn" msprop:Generator_UserColumnName="BudSchedule">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BudPosNum" msprop:Generator_ColumnVarNameInTable="columnBudPosNum" msprop:Generator_ColumnPropNameInRow="BudPosNum" msprop:Generator_ColumnPropNameInTable="BudPosNumColumn" msprop:Generator_UserColumnName="BudPosNum" type="xs:int" />
+              <xs:element name="BudFilled" msprop:Generator_ColumnVarNameInTable="columnBudFilled" msprop:Generator_ColumnPropNameInRow="BudFilled" msprop:Generator_ColumnPropNameInTable="BudFilledColumn" msprop:Generator_UserColumnName="BudFilled" type="xs:int" />
+              <xs:element name="BudFunction" msprop:Generator_ColumnVarNameInTable="columnBudFunction" msprop:Generator_ColumnPropNameInRow="BudFunction" msprop:Generator_ColumnPropNameInTable="BudFunctionColumn" msprop:Generator_UserColumnName="BudFunction">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BudDivCode" msprop:Generator_ColumnVarNameInTable="columnBudDivCode" msprop:Generator_ColumnPropNameInRow="BudDivCode" msprop:Generator_ColumnPropNameInTable="BudDivCodeColumn" msprop:Generator_UserColumnName="BudDivCode" type="xs:int" />
+              <xs:element name="BudSecCode" msprop:Generator_ColumnVarNameInTable="columnBudSecCode" msprop:Generator_ColumnPropNameInRow="BudSecCode" msprop:Generator_ColumnPropNameInTable="BudSecCodeColumn" msprop:Generator_UserColumnName="BudSecCode" type="xs:int" />
+              <xs:element name="BudItemNum" msprop:Generator_ColumnVarNameInTable="columnBudItemNum" msprop:Generator_ColumnPropNameInRow="BudItemNum" msprop:Generator_ColumnPropNameInTable="BudItemNumColumn" msprop:Generator_UserColumnName="BudItemNum">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
